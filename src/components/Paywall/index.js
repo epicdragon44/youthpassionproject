@@ -4,6 +4,8 @@ import { withFirebase } from '../Firebase';
 import stripesecured from './stripe-payment-logo.png';
 import ReactGA from 'react-ga';
 
+//TODO EVENTUALLY: display a separate paywall if they want to do a monthly sub
+
 require('dotenv').config()
 var CryptoJS = require("crypto-js");
 var SECRET_KEY = process.env.REACT_APP_KEY;
@@ -227,6 +229,9 @@ class Paywall extends React.Component {
         }
         if (this.props.courseCode==="2651345192031906821537") { //Money Management
             youtubeLink = "https://www.youtube.com/embed/kEjbEjXxCbg";
+        }
+        if (this.props.courseCode==="265134519-16396202808078") { //Interest Debt and Borrowing
+            youtubeLink = "https://www.youtube.com/embed/2nJbjqEJjWE";
         }
         //END HARDCODED VIDEO PREVIEWS
 
