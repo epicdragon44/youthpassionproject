@@ -63,27 +63,49 @@ class Paywall extends React.Component {
 
         //TODO: set the current course to be already paid for
         //current code is this.props.courseCode
+
+        const usr = secureStorage.getItem('authUser');
+        var courses = Object.values(usr).slice()[2];
+        
+        var cnt;
+        for (cnt in courses) {
+            if (courses[cnt].includes("PAIDFOR")) {
+                // if (courses[cnt].substring(0, courses[cnt].length-7)===this.props.courseCode) {
+                //     return false;
+                // }
+                //if the course in the db is already paid for, its not the one im looking for.
+                continue;
+            } else {
+                if (courses[cnt]===this.props.courseCode) {
+                    courses[cnt] = courses[cnt] + "PAIDFOR";
+                }
+            }
+        }
+
+        var uid = Object.values(usr).slice()[0];
+
+        this.props.firebase.user(uid).update({ courses: courses, });
+
+        window.location.reload();
     }
   
     // isTimeUp() {
         
-    //     // const usr = secureStorage.getItem('authUser');
-    //     // const uid = Object.values(usr).slice()[0];
-    //     // console.log(uid);
-    //     // let ret;
-    //     // this.props.firebase.sub(uid).on('value', snapshot => {
-    //     //     if(snapshot.val() == null) {
-    //     //         this.props.firebase.sub(uid).update({time: 1000000, id: uid,})
-    //     //         ret = 1000000
-    //     //     }
-    //     //     else {
-    //     //       ret = snapshot.val().time;
-    //     //     }
-    //     // })
-    //     // return ret;
+    // const usr = secureStorage.getItem('authUser');
+    // const uid = Object.values(usr).slice()[0];
+    // console.log(uid);
+    // let ret;
+    // this.props.firebase.sub(uid).on('value', snapshot => {
+    //     if(snapshot.val() == null) {
+    //         this.props.firebase.sub(uid).update({time: 1000000, id: uid,})
+    //         ret = 1000000
+    //     }
+    //     else {
+    //       ret = snapshot.val().time;
+    //     }
+    // })
+    // return ret;
 
-    //     //TODO: return true if in the database, the current course hasn't been paid for yet. return false if the course is paid for, and we shouldn't display a paywall
-    //     //to help, this.props.courseCode has been passed in
     // }
   
     loadStripe(onload) {
@@ -198,6 +220,16 @@ class Paywall extends React.Component {
             action: actionStr,
         });
 
+        var youtubeLink = "YEET";
+        //BEGIN HARDCODED VIDEO PREVIEWS
+        if (this.props.courseCode==="2029183779575016816101543") { //Paying for your College Journey
+            youtubeLink = "https://www.youtube.com/embed/w41ebjJAYcs";
+        }
+        if (this.props.courseCode==="2651345192031906821537") { //Money Management
+            youtubeLink = "https://www.youtube.com/embed/kEjbEjXxCbg";
+        }
+        //END HARDCODED VIDEO PREVIEWS
+
         const { stripeLoading, loading } = this.state;
         if (this.state.isMobile==='medium') {
             return (<div className="centered">
@@ -276,16 +308,12 @@ class Paywall extends React.Component {
                             For just 4.99, you'll get unrestricted access to everything in this course.
                         </div>
                         <br />
-                        {/* <div className="contentbox">
-                            <h2>One Price - Unlimited Features</h2>
+                        <div className="contentbox">
+                            <h2>Want to know what's in this course?</h2>
                             <br />
-                            <h3>For only 4.99 a month, you get:<br /></h3>
-                            <ul>
-                                <li>✓  Infinite financial course access</li>
-                                <li>✓  Complete access to our online community</li>
-                                <li>✓  Real world simulations on our Discord server</li>
-                            </ul>
-                        </div> */}
+                            <h3>Here's a preview of one of the videos within:<br /></h3>
+                            <iframe width="560" height="315" src={youtubeLink} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <img height="200px" src={stripesecured} />
                         <br />
                         <div>

@@ -241,7 +241,7 @@ const NavigationAuth = ({ authUser }) => (
             {/* <li className="left" style={{marginTop: "-5px"}}>
                 &nbsp;&nbsp;<PublicCoursesMenuItem link={ROUTES.PUBLIC_COURSES} />
             </li> */}
-            <Premium />
+            {/* <Premium /> */}
             
             <AccountMenuItem link={ROUTES.ACCOUNT} />
             

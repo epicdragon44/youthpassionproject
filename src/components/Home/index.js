@@ -4666,10 +4666,10 @@ class Container extends React.Component {
     }
 
     createCourse = (nameOfCourse, courseVisibility, courseDescription) => { //actually adds the course
-        if (this.isTimeUp()===1000000) {
+        if (this.isTimeUp()===1000000) { //DEPRECATED
             const usr = secureStorage.getItem('authUser');
             const uid = Object.values(usr).slice()[0];
-            const days = this.isTimeUp();
+            const days = this.isTimeUp(); //DEPRECATED
             let set;
             if ( days === 1000000)
                 set = 7;
@@ -4920,6 +4920,25 @@ class Container extends React.Component {
         //TODO: return true if in the database, the current course hasn't been paid for yet. return false if the course is paid for, and we shouldn't display a paywall
         //to help, this.props.courseCode has been passed in
 
+        const usr = secureStorage.getItem('authUser');
+        var courses = Object.values(usr).slice()[2];
+        
+        var cnt;
+        for (cnt in courses) {
+            var courseNameInDB = courses[cnt];
+            console.log(courseNameInDB)
+            if (courseNameInDB.includes("PAIDFOR")) {
+                var firstPart = courseNameInDB.substring(0, courseNameInDB.length-7);
+                console.log(firstPart);
+                console.log(this.state.activeCourse);
+                if (firstPart===this.state.activeCourse) {
+                    return false;
+                    console.log('matched!');
+                }
+            }
+        }
+        console.log('unmatched!');
+        return true;
     }
 
     toggleHidden() {
@@ -4994,9 +5013,9 @@ class Container extends React.Component {
         var mainpanel;
         if (this.state.mainPanelMode===0) {
             mainpanel = <MainPanel toggleHidden={this.toggleHidden} isTimeUp={this.isTimeUp} changeActiveCourse={this.changeActiveCourse} showTour={this.showTour} description={this.state.description} instantOpen={instantOpen} isMobile={this.props.isMobile} firebase={this.props.firebase} email={this.props.email} activeCourse={this.state.activeCourse} modules={this.getModules(this.state.activeCourse)} removeCourse={this.removeCourse} addVarkClicks={this.addVarkClicks}/>
-            if (this.isTimeUp()===false) {
+            if (this.isTimeUp()===true) {
                 // TODO: if(this.state.activeCourse=== the course code to block ) {
-                     mainpanel = <Paywall />;
+                     mainpanel = <Paywall courseCode={this.state.activeCourse}/>;
                 //  }
             }
         } else if (this.state.mainPanelMode===1) {
@@ -5245,10 +5264,20 @@ class Home extends React.Component {
         const usr = secureStorage.getItem('authUser');
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.updateCourses = this.updateCourses.bind(this);
+
+        var courses = Object.values(usr).slice()[2];
+        var cnt;
+        for (cnt in courses) {
+            if (courses[cnt].includes("PAIDFOR")) {
+                var firstPart = courses[cnt].substring(0, courses[cnt].length-7);
+                courses[cnt] = firstPart;
+            }
+        }
+
         this.state = {
             username: Object.values(usr).slice()[4],
             email: Object.values(usr).slice()[1],
-            courses: Object.values(usr).slice()[2],
+            courses: courses,
             varkClicks: Object.values(usr).slice()[6],
             isMobile: "large", //either large, medium or small
         }
