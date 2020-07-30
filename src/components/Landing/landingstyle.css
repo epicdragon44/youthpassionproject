@@ -1,0 +1,413 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+@media only screen and (min-width: 1100px) {
+    /* For desktop: */
+    .landing-hero {
+        background-image: url('./esketit.png');
+        padding-top: 5em;
+        max-height: 20em;
+    }
+  }
+
+.landing-hero {
+    height: fit-content;
+    background-color: white;
+    background-position:  center;
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    align-items: center;
+    text-align: center;
+    margin: 3em auto 0 auto;
+    padding-bottom: 5em;
+
+    animation-duration: 0.5s;
+    animation-name: zoomout;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: zoomout;
+    -webkit-animation-fill-mode: forwards;
+    background-position: center
+}
+
+.landing-hero:hover {
+    animation-duration: 0.5s;
+    animation-name: zoomin;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: zoomin;
+    -webkit-animation-fill-mode: forwards;
+    background-position: center
+}
+
+@keyframes zoomin {
+    from {
+      background-size: 100%;
+    }
+    to {
+      background-size: 110%;
+    }
+  }
+  
+@-webkit-keyframes zoomin {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 110%;
+    }
+}
+
+@keyframes zoomout {
+    from {
+      background-size: 110%;
+    }
+    to {
+      background-size: 100%;
+    }
+  }
+  
+@-webkit-keyframes zoomout {
+    from {
+        background-size: 110%;
+    }
+    to {
+        background-size: 100%;
+    }
+}
+
+.landing-bottombutton {
+    font-family: "Raleway";
+    font-weight: 1200;
+}
+
+.landing-hero h1 {
+    font-family: "Raleway";
+    font-size: 3em;
+    font-weight: 1200;
+}
+
+.landing-hero p {
+    font-family: "Cairo";
+    font-size: 1.25em;
+    font-weight: 800;
+}
+
+.landing-hero button {
+    font-weight: bold;
+    font-family: "Raleway";
+    background-color: #3DBB9F;
+    border: 3px solid #3DBB9F;
+    box-shadow: 7px 7px #36383F;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.7em 2em 0.7em 2em;
+    border-radius: 50px;
+}
+
+.landing-hero button:hover {
+    background-color: #3DBB9F;
+    border: 3px solid #3DBB9F;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    padding: 0.7em 2em 0.7em 2em;
+    border-radius: 50px;
+    box-shadow: 2px 2px #36383F;
+}
+
+.landing-hero .button { 
+    font-weight: bold;
+    font-family: "Raleway";
+    background-color: white;
+    border: 3px solid #00233b;
+    color: #00233b;
+    font-size: 1.25em;
+    padding-right: 2em;
+    padding-top: 0.65em;
+    padding-bottom: 0em;
+    padding-left: 2em;
+    margin-top: 0.9em;
+    height: 2em;
+    border-radius: 50px;
+    transition: 0.5s;
+    width: fit-content;
+}
+
+.landing-hero .button:hover {
+    background-color: #3DBB9F;
+    border: 3px solid #3DBB9F;
+    color: white;
+    box-shadow: 5px 5px #36383F;
+}
+
+.landing-about {
+    
+    /* background-image: url('./about.svg'); */
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.landing-about-mobile {
+    height: fit-content;
+    padding: 3em 0 0em 0;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.landing-about h1 {
+    margin-top: 4em;
+    font-family: 'Raleway';
+}
+
+.landing-about p {
+    margin-top: 2em;
+    width: 20em;
+    line-height: 1.2em;
+    font-family: 'Cairo';
+}
+
+.landing-features {
+    background-color: white;
+    height: fit-content;
+    /* background-color: #CEE8FF; */
+    text-align: center;
+    font-size: 1.75em;
+    padding-bottom: 2em;
+}
+
+.landing-partners {
+    background-color: white;
+    height: fit-content;
+    text-align: center;
+    
+    padding-bottom: 2em;
+    width: 100vw;
+    font-family: 'Raleway';
+}
+
+.landing-partners h1 {
+    margin-top: 2em;
+    font-size: 2.25em;
+}
+
+.landing-partnersrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    max-width: 1500px;
+    margin: 4em 0 4em 0;
+}
+
+.landing-partnersrow img {
+}
+
+.landing-features-mobile {
+    height: fit-content;
+    /* background-color: #CEE8FF; */
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.landing-features h1 {
+    font-family: 'Raleway';
+}
+
+.landing-features p {
+    font-family: 'Cairo';
+    font-size: 1em;
+    width: 20em;
+}
+
+.landing-mobile-section {
+    padding: 1em 0 1em 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.landing-pricing {
+    /* margin-top: 2em; */
+    background-color: #2D383A;
+    height: fit-content;
+    /* background-image: url('./pricing.png'); */
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+    padding: 1.5em 0 1.5em 0;
+}
+
+.landing-pricing-mobile {
+    padding-top: 2em;
+    background-color: #2D383A;
+    height: fit-content;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.landing-pricing-mobile button {
+    border-radius: 50px;
+    padding: 0.75em 1.25em 0.75em 1.25em;
+    font-size: large;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.landing-pricing h1 {
+    font-family: 'Raleway';
+}
+
+.landing-flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.landing-tile {
+    border: 2px solid white;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 15em;
+    border-radius: 25px;
+}
+
+.landing-tile h2 {
+    font-size: 1.2em;
+}
+
+.landing-tile p {
+    font-size: 0.8em;
+    padding: 0 1em 0 1em;
+}
+
+.landing-tile h3 {
+    font-size: 1.1em;
+}
+
+.landing-pricing button {
+    margin-top: 3em;
+    background-color: white;
+    border: 3px solid #00233b;
+    color: #00233b;
+    font-size: 1em;
+    padding: 0.7em 2em 0.7em 2em;
+    border-radius: 50px;
+}
+
+.landing-pricing button:hover {
+    background-color: #3DBB9F;
+    border: 3px solid #3DBB9F;
+    color: white;
+    border-radius: 50px;
+    
+}
+
+.landing-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em 0 2em 0;
+}
+
+.landing-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.landing-footer a:hover {
+    text-decoration: underline;
+}
+
+.landing-icon {
+    width: fit-content;
+    margin: 2em 1em 2em 1em;
+    border-radius: 25px;
+    background-color: white;
+    /* box-shadow: 5px 5px #36383F; */
+    padding-top: 1em;
+}
+
+.landing-icon p {
+    max-width: 10em;
+}
+
+.landing-sectionimg {
+    background-color: #36383F;
+    width: 22em;
+    /* border-radius: 25px; */
+    margin: 5px 5px 5px 5px;
+}
+
+.landing-sectionimg-light {
+    background-color: #FFFFFF;
+    width: 20em;
+    border-radius: 25px;
+    box-shadow: 5px 5px #36383F;
+    margin: 5px 5px 5px 5px;
+}
+
+.landing-sectionimg-dark {
+    background-color: #36383F;
+    width: 20em;
+    border-radius: 25px;
+    box-shadow: 7px 7px #3DBB9F;
+    margin: 5px 5px 5px 5px;
+}
+
+.landing-sectionimg-light-mobile {
+    background-color: #FFFFFF;
+    width: 20em;
+}
+
+.landing-sectionimg-dark-mobile {
+    background-color: #36383F;
+    width: 20em;
+}
+
+.landing-sectiondescr {
+    width: 20em;
+}
+
+.landing-sectiondescr-mobile {
+    width: fit-content;
+    padding: 0 2em 0 2em;
+    line-height: 2.5em;
+}
+
+.landing-sectiondescr-mobile h1 {
+    font-family: "Raleway";
+    font-size: 1.3em;
+}
+
+.landing-sectiondescr h1 {
+    font-family: "Raleway";
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 35px 0 35px;
+}
+
+.landing-sectiondescr p {
+    font-size: 0.75em;
+    text-align: justify;
+    margin: 0 35px 0 35px;  
+}
+
+.landing-buffered {
+    margin: 2em 0 2em 0;
+    border-top: 15px solid #3DBB9F;
+    width: 5em;
+}

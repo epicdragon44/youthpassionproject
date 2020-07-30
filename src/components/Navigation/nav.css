@@ -1,0 +1,98 @@
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    height: 4em;
+    vertical-align: center;
+    
+}
+
+li.nav {
+    float: right;
+}
+
+li.navmobile {
+    margin-top: 7px;
+    float: right;
+}
+
+.left {
+    float: left;
+    font-family: "Georgia", Times, serif;
+    font-size: large;
+}
+li a {
+    display: block;
+    color: #2d383a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* padding-top: 1.5em; */
+    padding-top: 1em;
+}
+
+li a:hover {
+    padding-top: 0.75em;
+    border-top: 0.375em solid #2d383a;
+}
+
+#upgradebutton {
+    margin-top: -17px;
+}
+
+#signoutbutton {
+    font-size: x-large;
+    color: #2d383a;
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: none;
+}
+
+.smalllogo {
+    width: 75px;
+}
+
+#logo {
+    margin-top: -12px;
+    margin-left: -12px;
+    height: 50px;
+}
+
+.mobilenavigationbutton {
+    color: #2d383a;
+    background-color: whitesmoke;
+    height: 3em;
+    margin-top: 0.2em;
+    text-align: center;
+    font-size: medium;
+    cursor: pointer;
+    /* border: 1px solid #333; */
+    /* box-shadow: 0 10px 29px 0 black; */
+    outline: none;
+    display: none;
+}
+
+.navigationbutton {
+    color: #2d383a;
+    background-color: whitesmoke;
+    height: 3em;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: 0.5em;
+    text-align: center;
+    font-size: medium;
+    border-radius: 50px;
+    cursor: pointer;
+    /* border: 1px solid #333; */
+    /* box-shadow: 0 10px 29px 0 black; */
+    outline: none;
+}
+
+.navigationbutton:hover {
+    /* background-color: #3DBB9F; */
+    /* color: white; */
+}

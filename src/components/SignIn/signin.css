@@ -1,0 +1,100 @@
+div.dialogwallpaper {
+    background-image: url(./evenbetterwallpaper.svg);
+    height: fit-content;
+    min-height: 100vh;
+    padding-bottom: 2em;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+div.content {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    height: fit-content;
+    vertical-align: middle;
+    text-align: center;
+    flex: auto;
+    background-color: white;
+    /* box-shadow: 0 10px 29px 0 gray; */
+    box-shadow: 5px 5px #36383F;
+    border-radius: 25px;
+}
+div.largecontent {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+    height: fit-content;
+    vertical-align: middle;
+    text-align: center;
+    flex: auto;
+    background-color: white;
+    /* box-shadow: 0 10px 29px 0 gray; */
+    box-shadow: 5px 5px #36383F;
+    border-radius: 25px;
+}
+a {
+    display: block;
+    color: #2D383A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.nonformatted {
+    display: inline;
+    padding: 0px 0px;
+    color: #2D383A;
+    text-decoration: none;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2D383A;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2D383A;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+  
