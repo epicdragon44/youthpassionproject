@@ -196,7 +196,7 @@ div {
 }
 
 .smallsidebartoggle:hover {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   color: white;
   transition: 1s;
 }
@@ -223,7 +223,7 @@ div {
   font-family: Arial #2D383A,Arial Bold,Gadget,sans-serif; 
   font-weight: bold;
   letter-spacing: 2px;
-  color: #3DBB9F;
+  color: #5538C8;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
@@ -232,15 +232,15 @@ div {
   text-align: center;
   font-size: small;
   font-family: Arial #2D383A,Arial Bold,Gadget,sans-serif;
-  color: #3DBB9F;
+  color: #5538C8;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
 
 .activecourselistitem {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   color: white;
-  border: 1px solid #3DBB9F;
+  border: 1px solid #5538C8;
   padding-top: 0px;
   width: 98%;
   padding-bottom: 15px;
@@ -279,7 +279,7 @@ div {
 }
 
 .courselistitem {
-  /* border: 1px solid #3DBB9F; */
+  /* border: 1px solid #5538C8; */
   background-color: white;
   border: 1px solid #2D383A;
   color: #2D383A;
@@ -302,7 +302,7 @@ div {
 }
 
 .courselistitem:hover {
-  /* background-color: #3DBB9F;
+  /* background-color: #5538C8;
   color: white; */
   margin-top: 5px;
   margin-left: 5px;
@@ -440,7 +440,7 @@ div {
 
 .coursechunks {
  
-  /* border-top: 3px solid #3DBB9F; */
+  /* border-top: 3px solid #5538C8; */
   margin-top: 2em;
 }
 
@@ -486,7 +486,7 @@ div {
   height: 55px;
   box-shadow: 5px 10px 10px 0 rgb(201, 201, 201);
   overflow: hidden;
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   border-radius: 0px;
 }
 
@@ -549,7 +549,7 @@ div {
 }
 
 .modulecontents {
-  /* border: 1px solid #3DBB9F; */
+  /* border: 1px solid #5538C8; */
   background-color: whitesmoke;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
@@ -561,7 +561,7 @@ div {
   padding-bottom: 1.5vh;
   padding-right: 3em;
   cursor: pointer;
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   font-size: large;
   color: white;
   border-radius: 20px 20px 0 0;
@@ -845,17 +845,17 @@ div {
 
 #teachersubmitbutton {
   padding: 0.5em 1em 0.5em 1em;
-  border: 1px solid #3DBB9F;
+  border: 1px solid #5538C8;
   transition: 0.5s;
   background-color: white;
-  color: #3DBB9F;
+  color: #5538C8;
   font-size: medium;
 }
 
 #teachersubmitbutton:hover {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   color: white;
-  border: 1px solid #3DBB9F;
+  border: 1px solid #5538C8;
 }
 
 .smallparagraph {
@@ -893,8 +893,8 @@ div {
   display: grid;
   width: 45em;
   grid-template-columns: 14em 21em 1em;
-  background-color: #3DBB9F;
-  border-right: 2px solid #3DBB9F;
+  background-color: #5538C8;
+  border-right: 2px solid #5538C8;
   border-top: none;
   border-bottom: none;
   color: white;
@@ -905,7 +905,7 @@ div {
   width: 45em;
   grid-template-columns: 14em 21em 1em;
   background-color: whitesmoke;
-  border: 1px solid #3DBB9F;
+  border: 1px solid #5538C8;
   border-top: none;
   border-bottom: none;
 }
@@ -918,7 +918,7 @@ label {
   display: grid;
   width: 45em;
   grid-template-columns: 14em 21em 1em;
-  border: 1px solid #3DBB9F;
+  border: 1px solid #5538C8;
 }
 
 .studentcell {
@@ -985,24 +985,24 @@ input[type=text].internal {
 
 input[type=text].internal:focus {
   border-radius: 25px;
-  border: 3px solid #3DBB9F;
+  border: 3px solid #5538C8;
 }
 
 input[type=text].whiteinternal {
   border-radius: 25px;
-  border: 1px solid #3DBB9F;
+  border: 1px solid #5538C8;
   max-width: 15em;
 }
 
 input[type=text].whiteinternal:focus {
   /* border-radius: 0px;
-  border: 3px solid #3DBB9F; */
-  border-bottom: 1px solid #3DBB9F;
+  border: 3px solid #5538C8; */
+  border-bottom: 1px solid #5538C8;
 }
 
 input[type=text]:focus {
   width: 20em;
-  border-bottom: 2px solid #3DBB9F;
+  border-bottom: 2px solid #5538C8;
 }
 
 input[type=password] {
@@ -1017,11 +1017,11 @@ input[type=password] {
 
 input[type=password]:focus {
   width: 20em;
-  border-bottom: 2px solid #3DBB9F;
+  border-bottom: 2px solid #5538C8;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -1047,8 +1047,8 @@ input[type=button].internal:hover, input[type=submit].internal:hover, input[type
 }
 
 .uploadfilebutton {
-  background-color: #3DBB9F;
-  border: 3px solid #3DBB9F;
+  background-color: #5538C8;
+  border: 3px solid #5538C8;
   color: white;
   border-radius: 0px;
   height: 50px;
@@ -1058,14 +1058,14 @@ input[type=button].internal:hover, input[type=submit].internal:hover, input[type
 }
 
 .uploadfilebutton:hover {
-  color: #3DBB9F;
+  color: #5538C8;
   background-color: white;
 }
 
 #darkinternal {
   background-color: white;
-  border: 2px solid #3DBB9F;
-  color: #3DBB9F;
+  border: 2px solid #5538C8;
+  color: #5538C8;
   padding: 10px 10px;
   text-decoration: none;
   margin: 4px 2px;
@@ -1077,7 +1077,7 @@ input[type=button].internal:hover, input[type=submit].internal:hover, input[type
 #lightinternal {
   background-color: white;
   border: 2px solid white;
-  color: #3DBB9F;
+  color: #5538C8;
   padding: 10px 10px;
   text-decoration: none;
   margin: 4px 2px;
@@ -1123,7 +1123,7 @@ input[type=button].internaladd:hover, input[type=submit].internaladd:hover, inpu
 input[type=button].darkinternaladd, input[type=submit].darkinternaladd, input[type=reset].darkinternaladd {
   background-color: transparent;
   border: none;
-  color: #3DBB9F;
+  color: #5538C8;
   padding: 10px 10px;
   text-decoration: none;
   margin: 4px 2px;
@@ -1140,7 +1140,7 @@ input[type=button].internaldeletion, input[type=submit].internaldeletion, input[
   background-color: white;
   padding-top: 4px;
   border: none;
-  color: #3DBB9F;
+  color: #5538C8;
   padding: 10px 10px;
   text-decoration: none;
   /* margin: 4px 2px; */
@@ -1155,7 +1155,7 @@ input[type=button].internaldeletion:hover, input[type=submit].internaldeletion:h
 input[type=button].whiteinternal, input[type=submit].whiteinternal, input[type=reset].whiteinternal {
   background-color: transparent;
   border: none;
-  color: #3DBB9F;
+  color: #5538C8;
   padding: 10px 10px;
   text-decoration: none;
   margin: 4px 2px;
@@ -1169,7 +1169,7 @@ input[type=button].whiteinternal:hover, input[type=submit].whiteinternal:hover, 
 }
 
 input[type=button].whiteinternaldeletion, input[type=submit].whiteinternaldeletion, input[type=reset].whiteinternaldeletion {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   border: none;
   color: white;
   padding: 10px 10px;
@@ -1206,7 +1206,7 @@ button:hover {
 }
 
 button.inline {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   border: none;
   color: white;
   padding: 10px 10px;
@@ -1217,7 +1217,7 @@ button.inline {
 }
 
 button.addmodule {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   width: 75%;
   border: none;
   color: white;
@@ -1248,7 +1248,7 @@ button.addmodule {
 }
 
 h1.modaldialog {
-  color: #3DBB9F;
+  color: #5538C8;
 }
 
 #topbarbutton {
@@ -1312,15 +1312,15 @@ h1.modaldialog {
 }
 
 .bluetext {
-  color: #3DBB9F;
+  color: #5538C8;
 }
 
 .modulerow {
   height: fit-content;
   padding: 0.75em 0 0.75em 4em;
-  border-left: 3px solid #3DBB9F;
+  border-left: 3px solid #5538C8;
   margin-top: 1em;
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   color: white;
   border-radius: 0px 0px 0 0;
 }
@@ -1364,20 +1364,20 @@ h1.modaldialog {
 }
 
 a.linkbutton {
-  color: #3DBB9F;
+  color: #5538C8;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-left: 10.5em;
   text-align: center;
   font-size: x-large;
   cursor: pointer;
-  border: 1px solid #3DBB9F;
+  border: 1px solid #5538C8;
   border-radius: 25px;
   transition: 0.5s;
 }
 
 a.linkbutton:hover {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   color: white;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -1385,7 +1385,7 @@ a.linkbutton:hover {
   text-align: center;
   font-size: x-large;
   cursor: pointer;
-  border: 1px solid #3DBB9F;
+  border: 1px solid #5538C8;
 }
 
 a.smalllinkbutton {
@@ -1402,8 +1402,8 @@ a.smalllinkbutton {
 }
 
 a.smalllinkbutton:hover {
-  background-color: #3DBB9F;
-  border: 1px solid #3DBB9F;
+  background-color: #5538C8;
+  border: 1px solid #5538C8;
   color: white;
 }
 
@@ -1477,7 +1477,7 @@ select {
 
 select:hover {
   color: white;
-  background-color: #3DBB9F; /* Fallback color if gradients are not supported */
+  background-color: #5538C8; /* Fallback color if gradients are not supported */
   background-image: -webkit-linear-gradient(top, #2D383A, #2D383A); /* For Chrome and Safari */
   background-image: -moz-linear-gradient(top, #2D383A, #2D383A); /* For old Firefox (3.6 to 15) */
   background-image: -ms-linear-gradient(top, #2D383A, #2D383A); /* For pre-releases of Internet Explorer  10*/
@@ -1639,7 +1639,7 @@ label.css-label {
 
 input.smallbutton {
   background-color: whitesmoke;
-  color: #3DBB9F;
+  color: #5538C8;
   height: 20px;
 }
 
@@ -1676,7 +1676,7 @@ input.smallbutton:hover {
 }
 
 .teachermoduletitle {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   height: 50px;
   color: white;
   font-size: large;
@@ -1724,13 +1724,13 @@ input.smallbutton:hover {
 }
 
 .dividertext {
-  color: #3DBB9F;
+  color: #5538C8;
   font-size: medium;
   text-align: center;
 }
 
 hr {
-  color: #3DBB9F;
+  color: #5538C8;
   margin-top: 0px;
 }
 
@@ -1810,15 +1810,15 @@ hr {
 .sharetext {
   font-size: medium;
   line-height: 1.5em;
-  color: #3DBB9F;
+  color: #5538C8;
   margin: 0 0 0 0;
 }
 
 .paybutton {
   font-size: medium;
   background-color: white;
-  color: #3DBB9F;
-  border: 2px solid #3DBB9F;
+  color: #5538C8;
+  border: 2px solid #5538C8;
   height: 3em;
   width: 20em;
   transition: 0.5s;
@@ -1826,12 +1826,12 @@ hr {
 }
 
 .paybutton:hover {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   color: white;
 }
 
 .paybackgroundstrip {
-  background-image: url(./evenbetterwallpaper.svg);
+  background-image: url(./esketit.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top center;
@@ -1879,8 +1879,8 @@ hr {
 }
 
 .begintrialmobile:hover {
-  border: 3px solid #3DBB9F;
-  background-color: #3DBB9F;
+  border: 3px solid #5538C8;
+  background-color: #5538C8;
   color: white;
   font-family: 'Cairo';
 }
@@ -1910,8 +1910,8 @@ hr {
 .activecallbutton {
   outline: none;
   padding: 0.75em 1.5em 0.75em 1.5em;
-  border: 2px solid #3DBB9F;
-  background-color: #3DBB9F;
+  border: 2px solid #5538C8;
+  background-color: #5538C8;
   color: white;
   font-size: large;
 }
@@ -1919,9 +1919,9 @@ hr {
 .callbutton {
   outline: none;
   padding: 0.75em 1em 0.75em 1em;
-  border: 2px solid #3DBB9F;
+  border: 2px solid #5538C8;
   background-color: white;
-  color: #3DBB9F;
+  color: #5538C8;
   font-size: large;
 }
 
@@ -1931,7 +1931,7 @@ hr {
   max-width: 35em;
   padding-bottom: 3em;
   padding-top: 0;
-  border-bottom: 2px solid #3DBB9F;
+  border-bottom: 2px solid #5538C8;
 }
 
 .contentbox ul {
@@ -1968,8 +1968,8 @@ hr {
 .tourbutton {
   font-size: medium;
   background-color: white;
-  color: #3DBB9F;
-  border: 2px solid #3DBB9F;
+  color: #5538C8;
+  border: 2px solid #5538C8;
   height: 3em;
   width: 12em;
   transition: 0.5s;
@@ -1996,9 +1996,9 @@ hr {
 }
 
 .activerenameitemblue {
-  border: 1.5px solid #3DBB9F;
+  border: 1.5px solid #5538C8;
   border-radius: 0px;
-  background-color: #3DBB9F;
+  background-color: #5538C8;
 }
 
 .twittericon {
@@ -2035,9 +2035,9 @@ hr {
 
 input.backarrowbutton {
   background-color: white;
-  border: 2px solid #3DBB9F;
+  border: 2px solid #5538C8;
   padding: 14px 30px;
-  color: #3DBB9F;
+  color: #5538C8;
 }
 
 .varkcontent {
@@ -2091,12 +2091,12 @@ input.backarrowbutton {
 }
 
 .react-tabs__tab:hover {
-  color: #3DBB9F;
-  border-color: #3DBB9F;
+  color: #5538C8;
+  border-color: #5538C8;
   border-top: none;
   border-right: none;
   border-left: none;
-  /* border-bottom: 10px solid #3DBB9F; */
+  /* border-bottom: 10px solid #5538C8; */
   /* padding-bottom:0; */
 }
 
@@ -2222,8 +2222,8 @@ div.managecontent {
 
 .subjecttag {
   font-size: medium;
-  color: #3DBB9F;
-  border: 2px solid #3DBB9F;
+  color: #5538C8;
+  border: 2px solid #5538C8;
   border-radius: 0px;
   width: fit-content;
   margin-top: 1em;
@@ -2282,7 +2282,7 @@ div.managecontent {
   height: 18px;
   overflow: hidden;
   outline: none;
-  border: 1px solid #3DBB9F;
+  border: 1px solid #5538C8;
   font-size: x-large;
   padding-bottom: 2px;
   font-family: 'Ubuntu';
@@ -2306,7 +2306,7 @@ div.managecontent {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   outline: none;
 }
 
@@ -2317,7 +2317,7 @@ div.managecontent {
   width: 19px;
   left: 0px;
   bottom: 0px;
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   outline: none;
 }
 
@@ -2379,7 +2379,7 @@ input.check:checked + .slider:before {
 }
 
 div.toplargecontent {
-  color: #3DBB9F;
+  color: #5538C8;
 }
 
 div.toplargecontent p {
@@ -2569,15 +2569,15 @@ div.streamlinedlargecontent {
 }
 
 .textarea {
-  border: 2px solid #3DBB9F;
+  border: 2px solid #5538C8;
   padding: 1em 1em 1em 1em;
   border-radius: 0px;
   font-family: 'Cairo', sans-serif;
 }
 
 .inputtypebutton {
-  border: 2px solid #3DBB9F;
-  color: #3DBB9F;
+  border: 2px solid #5538C8;
+  color: #5538C8;
   font-size: medium;
   width: fit-content;
   padding: 10px 15px 10px 15px;
@@ -2588,7 +2588,7 @@ div.streamlinedlargecontent {
 }
 
 .inputtypebutton:hover {
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   color: white;
 }
 
@@ -2612,12 +2612,12 @@ div.streamlinedlargecontent {
 .instructionguide h2 {
   display: block;
   margin: 10px auto 10px auto;
-  border-bottom: 4px solid #3DBB9F;
+  border-bottom: 4px solid #5538C8;
   min-width: 20px;
   padding: 20px 100px 10px 100px;
   width: fit-content;
   font-size: large;
-  color: #3DBB9F;
+  color: #5538C8;
 }
 
 .upload-btn-wrapper {
@@ -2627,8 +2627,8 @@ div.streamlinedlargecontent {
 }
 
 .btn {
-  border: 2px solid #3DBB9F;
-  color: #3DBB9F;
+  border: 2px solid #5538C8;
+  color: #5538C8;
   background-color: white;
   padding: 8px 20px;
   border-radius: 8px;
@@ -2653,14 +2653,14 @@ div.streamlinedlargecontent {
   padding: 0.7em 1.3em 0.7em 1.3em;
   border-radius: 0px;
   transition: 0.5s;
-  border: 2px solid #3DBB9F;
+  border: 2px solid #5538C8;
   font-size: large;
   margin: 0;
 }
 
 .joinroom:hover {
   background-color: white;
-  color: #3DBB9F;
+  color: #5538C8;
 }
 
 .roomfield {
@@ -2692,9 +2692,9 @@ div.streamlinedlargecontent {
 .returnbutton {
   font-size: medium;
   padding: 0.65em 1em 0.65em 1em;
-  border: 2px solid #3DBB9F;
+  border: 2px solid #5538C8;
   color: white;
-  background-color: #3DBB9F;
+  background-color: #5538C8;
   border-radius: 10px;
   height: fit-content;
   margin: 0 0 10px 0;
@@ -2703,8 +2703,8 @@ div.streamlinedlargecontent {
 }
 
 .returnbutton:hover {
-  border: 2px solid #3DBB9F;
-  color: #3DBB9F;
+  border: 2px solid #5538C8;
+  color: #5538C8;
   background-color: white;
 }
 

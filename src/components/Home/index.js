@@ -3927,8 +3927,6 @@ class MainPanel extends React.Component {
                 {courseDescription}
                 <br />
                 <SectionBreak />
-                <br />
-                {unenroll}
                 <br /><br />
             </TabPanel>
         ) : (null);
@@ -3975,7 +3973,7 @@ class MainPanel extends React.Component {
                                 {/* <br /> */}
                                 <h1>{welcomeMsg}</h1>
                                 {/* <br /> */}
-                                {welcomeMsg==='No course selected.' ? (null) : <button onClick={this.handleRemove} className="roundunenrollbutton">Unenroll</button>}
+                                {welcomeMsg==='No course selected.' ? (null) : <></>}
                             </div>
                         </div>
                     </div>
@@ -4292,7 +4290,7 @@ function getPublicCourses(firebase) {
 
     for (let i = 0, len = allCourses.length; i < len; ++i) {
         var course = allCourses[i];
-        if (course.CourseName.substring(0, 4)===('KOIN')) {
+        if (course.CourseName.substring(0, 3)===('YPP')) {
             publicItems.push({
                 name: course.CourseName,
                 teacher: course.nteacherName,
@@ -5013,11 +5011,7 @@ class Container extends React.Component {
         var mainpanel;
         if (this.state.mainPanelMode===0) {
             mainpanel = <MainPanel toggleHidden={this.toggleHidden} isTimeUp={this.isTimeUp} changeActiveCourse={this.changeActiveCourse} showTour={this.showTour} description={this.state.description} instantOpen={instantOpen} isMobile={this.props.isMobile} firebase={this.props.firebase} email={this.props.email} activeCourse={this.state.activeCourse} modules={this.getModules(this.state.activeCourse)} removeCourse={this.removeCourse} addVarkClicks={this.addVarkClicks}/>
-            if (this.isTimeUp()===true) {
-                // TODO: if(this.state.activeCourse=== the course code to block ) {
-                     mainpanel = <Paywall courseCode={this.state.activeCourse}/>;
-                //  }
-            }
+            
         } else if (this.state.mainPanelMode===1) {
             mainpanel = <AddCoursePanel currentCourses={this.state.arrCourses} addCourse={this.addCourse}/>
         } else if (this.state.mainPanelMode===2) {
@@ -5055,15 +5049,10 @@ class Container extends React.Component {
                                 <h1 id="headerlarge">Hi, {this.state.username}</h1>
                                 <Link id="removeformat" to={ROUTES.ACCOUNT}><p>{email}
                                 &nbsp;&nbsp;<img id="smalloffset" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABQElEQVQ4jZWVz0rDQBDGJyUSbyVXT+LB1gpe+gJCizRIfCfpKb35KE0PCupdQRQ8+wZWwQeoPw/Z4Ha6f8h3ys5+++03mckkkQiAXESOzPIjSZKf2JmY4A3/qGL8nkOgADIrNLKezyxeBsxibubGyRswAi6AL8vhGpgAJ8CriV37xKZs4xc/9N7EJZgCTwERH16APZ/LYcSZxgY4DhXlUEQSFVuKSCkiVyKyUns9ETnQrnKa1nhguwAAS0cWteKsgXujkQswDqR06RAsA/zxTh86UtLQr2Tnxj5QAXfGvo3awV8pzqc5WwF9TZ450qhNmqVDDOA85PaU7m0z9IllNJ9cV7wD+y7BQhFDTjdqXfhctsPhGRjQDIdv62A7HAaGAzAPFb0dEqm1frQEb614CkyDYp4L7AG7iPHDTSrdfwF/1pEFwN+QFT0AAAAASUVORK5CYII="></img>
-                                </p></Link>
+                                </p></Link><br />
                                 {/* <Link className="accountsettingsbutton" to={ROUTES.ACCOUNT}>
                                         Go to Account Settings
                                 </Link> */}
-                            </div>
-                            <div className="rightsideofheader">
-                                <p id="headersmallparagraph">Want to test your finance skills in an online community? <br /> Want to contact us?</p>
-                                
-                                <a href="https://discord.gg/dvJXfWh" className="discordbutton">{"Go to Discord"}</a>
                             </div>
                         </div>
                         {/* <span><a href="https://modulusedu.com/">Powered by Modulus</a></span> */}
@@ -5113,17 +5102,19 @@ class Container extends React.Component {
                             )}
                         </center>
                         <ReallySmallBreak text="COURSES ENROLLED" /></>) : (null)} */}
-                        {(this.state.arrCourses.length<=1) ? (
+                        {/* {(this.state.arrCourses.length<=1) ? (
                                 <div className="coursechunks"><InlineBrowseCourseItem browseCourseMode={this.browseCourseMode} /> </div>
-                            ) : null}
+                            ) : null} */}
                         {(this.state.arrCourses.length<=1) ? (null) : (
                         <div className="coursechunks">
                             {(this.state.arrCourses.length<=1) ? (
-                                <InlineBrowseCourseItem browseCourseMode={this.browseCourseMode} /> 
+                                // <InlineBrowseCourseItem browseCourseMode={this.browseCourseMode} /> 
+                                <></>
                             ) : 
                                 this.state.arrCourses.map(course => (
                                     (course==="000000") ? (
-                                        <InlineBrowseCourseItem browseCourseMode={this.browseCourseMode} /> 
+                                        // <InlineBrowseCourseItem browseCourseMode={this.browseCourseMode} />
+                                        <></>
                                     ) : 
                                     (
                                         (!((this.getTeacherEmail(course)+'').includes(email))) ? (

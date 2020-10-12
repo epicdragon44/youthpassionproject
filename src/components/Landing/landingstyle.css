@@ -6,28 +6,24 @@
     /* For desktop: */
     .landing-hero {
         background-image: url('./esketit.png');
-        padding-top: 5em;
-        max-height: 20em;
+        /* padding-top: 5em; */
+        /* max-height: 20em; */
     }
   }
 
 .landing-hero {
-    height: fit-content;
+    min-height: 100vh;
     background-color: white;
     background-position:  center;
     background-repeat: no-repeat;
     /* background-size: 100%; */
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
-    margin: 3em auto 0 auto;
-    padding-bottom: 5em;
-
-    animation-duration: 0.5s;
-    animation-name: zoomout;
-    animation-fill-mode: forwards;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-name: zoomout;
-    -webkit-animation-fill-mode: forwards;
+    /* margin: 3em auto 3em auto; */
+    /* padding-bottom: 5em; */
+    /* padding-top: 5em; */
+    padding: 0 0 0 0;
+    margin: -7em 0 0 0;
     background-position: center
 }
 
@@ -41,42 +37,6 @@
     background-position: center
 }
 
-@keyframes zoomin {
-    from {
-      background-size: 100%;
-    }
-    to {
-      background-size: 110%;
-    }
-  }
-  
-@-webkit-keyframes zoomin {
-    from {
-        background-size: 100%;
-    }
-    to {
-        background-size: 110%;
-    }
-}
-
-@keyframes zoomout {
-    from {
-      background-size: 110%;
-    }
-    to {
-      background-size: 100%;
-    }
-  }
-  
-@-webkit-keyframes zoomout {
-    from {
-        background-size: 110%;
-    }
-    to {
-        background-size: 100%;
-    }
-}
-
 .landing-bottombutton {
     font-family: "Raleway";
     font-weight: 1200;
@@ -86,6 +46,7 @@
     font-family: "Raleway";
     font-size: 3em;
     font-weight: 1200;
+    margin-top: 5em;
 }
 
 .landing-hero p {
@@ -97,8 +58,8 @@
 .landing-hero button {
     font-weight: bold;
     font-family: "Raleway";
-    background-color: #3DBB9F;
-    border: 3px solid #3DBB9F;
+    background-color:#5538C8;
+    border: 3px solid#5538C8;
     box-shadow: 7px 7px #36383F;
     color: white;
     font-size: 1.5em;
@@ -107,8 +68,8 @@
 }
 
 .landing-hero button:hover {
-    background-color: #3DBB9F;
-    border: 3px solid #3DBB9F;
+    background-color:#5538C8;
+    border: 3px solid#5538C8;
     margin-top: 10px;
     margin-left: 10px;
     color: white;
@@ -136,8 +97,8 @@
 }
 
 .landing-hero .button:hover {
-    background-color: #3DBB9F;
-    border: 3px solid #3DBB9F;
+    background-color:#5538C8;
+    border: 3px solid#5538C8;
     color: white;
     box-shadow: 5px 5px #36383F;
 }
@@ -308,8 +269,8 @@
 }
 
 .landing-pricing button:hover {
-    background-color: #3DBB9F;
-    border: 3px solid #3DBB9F;
+    background-color:#5538C8;
+    border: 3px solid#5538C8;
     color: white;
     border-radius: 50px;
     
@@ -363,7 +324,7 @@
     background-color: #36383F;
     width: 20em;
     border-radius: 25px;
-    box-shadow: 7px 7px #3DBB9F;
+    box-shadow: 7px 7px#5538C8;
     margin: 5px 5px 5px 5px;
 }
 
@@ -408,6 +369,6 @@
 
 .landing-buffered {
     margin: 2em 0 2em 0;
-    border-top: 15px solid #3DBB9F;
+    border-top: 15px solid#5538C8;
     width: 5em;
 }
